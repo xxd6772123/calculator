@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="表达式"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:gravity="right|center"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="="
+            android:textSize="25dp"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:gravity="right|center"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            />
+
+    </LinearLayout>
+
+    <TableRow
+        android:gravity="center_horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_AC"
+            android:text="AC"
+            style="@style/TextStyle_3"
+            android:background="@drawable/shape_oval_2"
+            android:onClick="dy"
+            />
+
+        <Button
+            android:id="@+id/btn_zf"
+            android:text="±"
+            style="@style/TextStyle_3"
+            android:background="@drawable/shape_oval_2"
+            android:onClick="sbumit"
+            />
+
+        <Button
+            android:id="@+id/remainder"
+            android:text="%"
+            style="@style/TextStyle_3"
+            android:background="@drawable/shape_oval_2"
+            android:onClick="dy"
+            />
+
+        <Button
+            android:id="@+id/btn_cf"
+            android:text="÷"
+            style="@style/TextStyle_3"
+            android:background="@drawable/shape_4"
+            android:onClick="dy"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:background="@drawable/shape_oval"
+            style="@style/TextStyle_1"
+            android:text="1"
+            android:onClick="sbumit"
+            />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:background="@drawable/shape_oval"
+            style="@style/TextStyle_1"
+            android:text="2"
+            android:onClick="sbumit"
+            />
+
+        <Button
+            android:id="@+id/btn_3"
+            android:background="@drawable/shape_oval"
+            style="@style/TextStyle_1"
+            android:text="3"
+            android:onClick="sbumit"
+            />
+
+        <Button
+            android:id="@+id/btn_jia"
+            android:text="+"
+            style="@style/TextStyle_1"
+            android:background="@drawable/shape_4"
+            android:onClick="dy"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_4"
+            android:text="4"
+            style="@style/TextStyle_1"
+            android:background="@drawable/shape_oval"
+            android:onClick="sbumit"
+            />
+
+        <Button
+            android:id="@+id/btn_5"
+            android:text="5"
+            style="@style/TextStyle_1"
+            android:background="@drawable/shape_oval"
+            android:onClick="sbumit"
+            />
+
+        <Button
+            android:id="@+id/btn_6"
+            android:text="6"
+            style="@style/TextStyle_1"
+            android:background="@drawable/shape_oval"
+            android:onClick="sbumit"
+            />
+
+        <Button
+            android:id="@+id/btn_jian"
+            android:text="-"
+            style="@style/TextStyle_1"
+            android:background="@drawable/shape_4"
+            android:onClick="dy"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_7"
+            android:text="7"
+            style="@style/TextStyle_1"
+            android:background="@drawable/shape_oval"
+            android:onClick="sbumit"
+            />
+
+        <Button
+            android:id="@+id/btn_8"
+            android:text="8"
+            style="@style/TextStyle_1"
+            android:background="@drawable/shape_oval"
+            android:onClick="sbumit"
+            />
+
+        <Button
+            android:id="@+id/btn_9"
+            android:text="9"
+            style="@style/TextStyle_1"
+            android:background="@drawable/shape_oval"
+            android:onClick="sbumit"
+            />
+
+        <Button
+            android:id="@+id/btn_c"
+            android:text="*"
+            style="@style/TextStyle_1"
+            android:background="@drawable/shape_4"
+            android:onClick="dy"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_0"
+            android:layout_width="40dp"
+            android:layout_span="2"
+            android:background="@drawable/shape_3"
+            style="@style/TextStyle_1"
+            android:text="0"
+            android:onClick="sbumit"
+            />
+
+        <Button
+            android:id="@+id/btn_d"
+            android:text="."
+            style="@style/TextStyle_1"
+            android:background="@drawable/shape_oval"
+            android:onClick="sbumit"
+            />
+
+        <Button
+            android:id="@+id/btn_dy"
+            android:text="="
+            style="@style/TextStyle_1"
+            android:background="@drawable/shape_4"
+            android:onClick="dy"
+            />
+
+    </TableRow>
+
+</TableLayout>
